@@ -8,13 +8,13 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 app.use(express.json());
 
-const postRoutes = require("./src/routes/postRouter")
 
+const postRoutes = require("./src/routes/postRouter")
 
 
 async function startServer(){
     await connectDB();
-
+    
     app.listen(PORT, () => {
         console.log(`Server running on port ${PORT}`);
     });
