@@ -5,13 +5,13 @@ const createPost = async (req, res)=>{
         // no need to manuallly write res.body.title annol.. 
     const post = await Post.create(req.body); 
         // instead of res.send we use json(post)
-    res.status(201).json(post);  
+    res.status(201).send("Created").json(post);  
 }
 
 const updatePost = async (req, res)=>{
     //no need to store in post adn do the update..
     const post = await Post.findByIdAndUpdate(req.params.id, req.body);
-    res.status(200).json(post);
+    res.status(200).send("OK").json(post);
 }
 
 const deletePost = async (req, res)=>{

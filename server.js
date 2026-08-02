@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 
-const postRoutes = require("./src/routes/postRouter")
+const postRoutes = require("./src/routes/postRouter");
 
 
 async function startServer(){
