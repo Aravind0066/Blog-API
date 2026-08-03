@@ -11,7 +11,7 @@ app.use(express.json());
 
 const postRoutes = require("./src/routes/postRouter");
 
-
+// this functions is nothing special just something.. to keep the app turned on else it would just be a one time run.
 async function startServer(){
     await connectDB();
     
