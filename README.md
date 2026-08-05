@@ -145,6 +145,78 @@ POST /posts
 
 ---
 
+## Experience Gained
+
+Through this project, I gained hands-on experience with building a RESTful API using the MVC architecture and understood how an HTTP request flows through a backend application.
+
+### Request Flow
+
+```text
+Client (Postman / Browser)
+
+        │
+        ▼
+
+Express Server (server.js)
+
+        │
+        ▼
+
+Routes
+
+        │
+        ▼
+
+Controllers
+
+        │
+        ▼
+
+Models (Mongoose)
+
+        │
+        ▼
+
+MongoDB Database
+
+        │
+        ▼
+
+Controller
+
+        │
+        ▼
+
+HTTP Response (JSON)
+```
+
+### Key Learnings
+
+- Understood how Express applications are structured using the MVC pattern.
+- Learned the purpose of **server.js** as the application's entry point.
+- Connected a Node.js application to MongoDB using Mongoose.
+- Designed Mongoose Schemas and Models.
+- Built RESTful CRUD APIs using Express Routes and Controllers.
+- Learned the responsibility of each layer:
+  - **server.js** – Application setup and initialization.
+  - **Routes** – Maps API endpoints to controllers.
+  - **Controllers** – Handles request processing and business logic.
+  - **Models** – Interacts with the MongoDB database.
+- Learned to use asynchronous database operations with `async/await`.
+- Understood how middleware such as `express.json()` processes incoming requests before they reach the controllers.
+- Worked with Express request objects:
+  - `req.body`
+  - `req.params`
+  - `req.query`
+- Learned the purpose and usage of common HTTP methods:
+  - GET
+  - POST
+  - PUT
+  - DELETE
+- Learned appropriate HTTP status codes for REST APIs (200, 201, 204, 400, 404, 500).
+- Tested API endpoints using Postman.
+---
+
 ## Acknowledgements
 
 This project was built as part of the **Backend Developer Roadmap** by roadmap.sh.
