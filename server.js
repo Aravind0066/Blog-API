@@ -25,6 +25,6 @@ app.get("/" , (req,res)=>{
     res.send("This is the Home Page.");
 });
 
-app.use("/post", postRoutes);
+app.use("/posts", postRoutes);
 
 startServer();
